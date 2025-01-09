@@ -3,9 +3,18 @@ import tensorflow as tf
 from tensorflow.keras.models import load_model
 import numpy as np
 from tensorflow.keras.preprocessing import image
+import gdown
+import os
 
 # Load the model
-model = load_model("best_model.h5")
+MODEL_ID = "https://drive.google.com/file/d/1XOO9QY3CWC0Y9yibfF0LHmHCCxu5a6VO/view?usp=drive_link"
+
+MODEL_PATH = "best_model.h5"
+if not os.path.exists(MODEL_PATH):
+    print("Downloading model from Google Drive...")
+    gdown.download(f"https://drive.google.com/uc?id={MODEL_ID}", MODEL_PATH, quiet=False)
+
+model = load_model(MODEL_PATH)
 
 # Define class labels
 class_labels = ["buildings", "forest", "glacier", "mountain", "sea", "street"]
