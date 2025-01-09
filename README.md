@@ -24,6 +24,8 @@ The dataset used for this project is the **Intel Image Classification Dataset**,
 Kaggel Link: 
 [Intel Image Classification on Kaggle](https://www.kaggle.com/datasets/puneet6060/intel-image-classification)
 
+<img src="https://github.com/user-attachments/assets/5c5fa94a-a2b3-4f50-b645-e2ef7c5b8b54" width="50%">
+
 ---
 
 ## Exploratory Data Analysis (EDA)
