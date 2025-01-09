@@ -8,7 +8,7 @@ import io
 app = Flask(__name__)
 
 # Load model
-model = load_model("best_model.h5")
+model = load_model("best_model_tf17.h5")
 
 # Define labels
 class_labels = ["buildings", "forest", "glacier", "mountain", "sea", "street"]

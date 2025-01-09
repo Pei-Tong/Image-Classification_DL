@@ -7,9 +7,9 @@ import gdown
 import os
 
 # Load the model
-MODEL_ID = "https://drive.google.com/file/d/1XOO9QY3CWC0Y9yibfF0LHmHCCxu5a6VO/view?usp=drive_link"
+MODEL_ID = "https://drive.google.com/file/d/1MBic3sYyN4vO6PpLWgc8qJhifElQQIq5/view?usp=sharing"
 
-MODEL_PATH = "best_model.h5"
+MODEL_PATH = "best_model_tf17.h5"
 if not os.path.exists(MODEL_PATH):
     print("Downloading model from Google Drive...")
     gdown.download(f"https://drive.google.com/uc?id={MODEL_ID}", MODEL_PATH, quiet=False)
@@ -17,7 +17,7 @@ if not os.path.exists(MODEL_PATH):
 model = load_model(MODEL_PATH)
 
 # Define class labels
-class_labels = ["buildings", "forest", "glacier", "mountain", "sea", "street"]
+class_labels = ["Buildings", "Forest", "Glacier", "Mountain", "Sea", "Street"]
 
 # Streamlit application interface
 st.title("Image Classifier")

@@ -78,7 +78,7 @@ def create_model(
 
 # Set Callback
 callbacks = [
-    ModelCheckpoint("best_model.h5", save_best_only=True, monitor="val_loss", mode="min"),
+    ModelCheckpoint("best_model_tf17.h5", save_best_only=True, monitor="val_loss", mode="min"),
     EarlyStopping(patience=5, monitor="val_loss", mode="min", restore_best_weights=True),
     ReduceLROnPlateau(patience=3, factor=0.5, monitor="val_loss", mode="min")
 ]
@@ -87,7 +87,7 @@ callbacks = [
 model = create_model()
 history = model.fit(train_ds, epochs=50, validation_data=val_ds, callbacks=callbacks)
 
-print("Model saved as best_model.h5")
+print("Model saved as best_model_tf17.h5")
 
 # Save Keras model to BentoML repository
 # bentoml.tensorflow.save_model("image_classifier_model", model)
