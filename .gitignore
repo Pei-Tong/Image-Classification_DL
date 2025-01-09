@@ -1,0 +1,38 @@
+# Python Caching and Virtual Environments
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+env/
+venv/
+
+# Jupyter Notebook Caching
+.ipynb_checkpoints/
+
+# CUDA Installation files
+cuda_*.run
+*.deb
+
+# Model file
+*.h5
+*.pb
+saved_model/
+
+# Logs and Output Files
+*.log
+*.out
+*.err
+
+# VSCode Settings
+.vscode/
+
+# Archive
+dataset/
+images/
+*.jpg
+*.png
+*.jpeg
+*.zip
+intel-image-classification/
+Reference/
