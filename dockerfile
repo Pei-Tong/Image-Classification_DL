@@ -1,4 +1,4 @@
-FROM python:3.11
+FROM python:3.12
 
 # Set environment variable （decrease TensorFlow warning）
 ENV TF_ENABLE_ONEDNN_OPTS=0
