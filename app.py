@@ -7,7 +7,7 @@ import gdown
 import os
 
 # Load the model
-MODEL_ID = "1MBic3sYyN4vO6PpLWgc8qJhifElQQIq5/view?usp=sharing"
+MODEL_ID = "1MBic3sYyN4vO6PpLWgc8qJhifElQQIq5"
 
 MODEL_PATH = "best_model_tf17.h5"
 if not os.path.exists(MODEL_PATH):
